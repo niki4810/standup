@@ -1,0 +1,46 @@
+{
+  "name": "Standup",
+  "version": "0.0.1",
+  "description": "A simple note management application for your standup meetings.",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "standup",
+    "scrum",
+    "agile",
+    "scrum",
+    "note",
+    "organizer"
+  ],
+  "author": "Nikhilesh Katakam <nikhilesh.k@gmail.com> (http://niki4810.github.io/)",
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/test-config/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ],
+    "testDirectoryName": "tests"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "es6-promise": "^1.0.0",
+    "gulp": "^3.8.7",
+    "gulp-bower": "0.0.6",
+    "gulp-browserify": "^0.5.0",
+    "gulp-changed": "^0.4.1",
+    "gulp-concat": "^2.3.4",
+    "lodash": "^2.4.1",
+    "moment": "^2.8.1",
+    "react": "^0.11.1",
+    "react-tools": "^0.11.1",
+    "reactify": "^0.14.0"
+  },
+  "devDependencies": {
+    "gulp-jscs": "^1.1.0",
+    "gulp-jshint": "^1.8.4",
+    "gulp-react": "^0.5.0",
+    "gulp-run": "^1.6.3",
+    "jest-cli": "^0.1.18",
+    "jshint-stylish": "^0.4.0"
+  }
+}

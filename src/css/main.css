@@ -1,0 +1,359 @@
+body {
+  padding: 5px;
+  min-height: 100%;
+  background: #eee url('../assets/background.png');     
+}
+
+.app-hide-content {
+    display: none;
+}
+
+.app-transition {
+  transition: color 0.5s ease, border 0.5s ease;  
+}
+
+
+.note:before {
+  position: absolute;
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  width:15px;
+  text-align:center;
+  display:table;
+  vertical-align:middle;
+  font-size:11px;
+  color: #ccc;
+  z-index: 1100px;
+  top:10px;
+  right: 5px;
+}
+
+.flip-icon:hover {
+  border-color: #99ccff; 
+  color: #000;
+}
+
+.note {
+  position:relative;
+  width: 320px;
+  height: 500px;  
+  margin: 0 auto;
+  color: #555;
+  font-size: 16px;
+/*   font-family: courier, monospace;  */
+  font-family: "Marker Felt", "Segoe Print", Geneva, Verdana, sans-serif;  
+  
+  
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  perspective: 600px;
+}
+
+.note .front,
+.note .back {
+  background-color:#fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2); 
+}
+
+.sticky-yellow {
+  background-color: #ffc;  
+}
+
+.sticky-blue {
+  background-color: #ccf;  
+}
+
+.sticky-green {
+  background-color: #cfc;  
+}
+
+.note .front:hover,
+.note .back:hover {
+  border-color: #99ccff;  
+}
+
+.note .front {
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: 900;
+  width: inherit;
+  height: inherit;
+/*   background: blue; */
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+			 -moz-transform: rotateX(0deg) rotateY(0deg);
+						transform: rotateX(0deg) rotateY(0deg);
+
+		-webkit-transform-style: preserve-3d;
+			 -moz-transform-style: preserve-3d;
+						transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+			 -moz-backface-visibility: hidden;
+						backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+						transition: all .4s ease-in-out;
+}
+
+.note.flip .front {
+		z-index: 900;
+		border-color: #eee; 
+/* 		background: #333; */
+        box-shadow: 0 15px 50px rgba(0,0,0,0.2); 
+
+		-webkit-transform: rotateY(180deg);
+			 -moz-transform: rotateY(180deg);
+						transform: rotateY(180deg);
+	}
+
+	.note .back {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 800;
+		width: inherit;
+		height: inherit;
+/* 		background: green; */
+/* 		text-shadow: 1px 1px 1px rgba(0,0,0,0.6); */
+		-webkit-transform: rotateY(-180deg);
+			 -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+						transform: rotateY(-179deg);
+
+		-webkit-transform-style: preserve-3d;
+			 -moz-transform-style: preserve-3d;
+						transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+			 -moz-backface-visibility: hidden;
+						backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+						transition: all .4s ease-in-out;
+	}
+
+	.note.flip .back {
+		z-index: 1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+			 -moz-transform: rotateX(0deg) rotateY(0deg);
+						transform: rotateX(0deg) rotateY(0deg);
+
+		box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+	}
+
+
+
+.note-section {
+/*   border-bottom: 1px solid #d8d8d8; */
+  list-style: none;
+/*   text-indent: 25px; */
+  padding-left: 10px; 
+  padding-right: 20px;
+  text-transform: capitalize;
+  overflow-y:auto;
+}
+.note-section h5 {
+  margin: 5px 0;  
+   border-bottom: 2px solid #663300;
+  text-transform: none;
+  /* text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #663300; */
+  color:#663300;
+}
+
+/* .what-i-worked-on {
+  width: 45.3125%;  
+}
+
+.what-i-will-work-on {
+    width:50%;
+}
+
+.blockers {
+    width:25%;
+}
+
+.additional-notes{
+  width: 43.75%;
+} */
+
+.note-section ul {
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.note-section p{
+  font-size: 14px;
+  padding-left:0;
+}
+
+.note-section-1, 
+.note-section-2 {
+  height: 165px;
+  padding-bottom: 5px;
+}
+.note-section-3{
+  /*height: 157px;*/
+  height:128px;
+  padding-bottom:3px;
+}
+.note-section-4 {
+  /*height: 100%;*/
+  height:92%;
+  border:0;
+  padding-bottom: 5px;
+}
+
+.note-settings {
+  position:absolute;
+  z-index: 1100;
+  bottom:5px;
+  /*right:5px;*/
+  right:8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /*border: 1px solid #d8d8d8;*/
+  /*width:60px;*/
+  width:95%;
+  color:#663300;
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+/*.note-settings:hover{
+  border-color: #99ccff;
+}*/
+.note-settings span{
+  padding: 7px;
+}
+
+.app-button { 
+  display: table-cell;
+  border:1px solid #d8d8d8;
+  background-color:#fff;
+  width: 50px;
+  height:50px;
+  text-align:center;
+  font-size: 25px;
+/*   color:#BBB; */ 
+  color: #663300;
+  vertical-align: middle;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2); 
+    
+   -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none; 
+}
+
+.app-button:hover { 
+  border-color: #99ccff;
+}
+
+.app-date {
+  color: #663300;
+  font-family: "Marker Felt", "Segoe Print", Geneva, Verdana, sans-serif;
+}
+.app-date-field-container {
+    text-align: center;
+}
+
+
+.app-ribbon {
+    width:25px;
+    height:40px;
+    background-color: orange;
+    position:absolute;
+    z-index:1001;
+    right:5px;    
+}
+
+.app-ribbon:after {
+    content: '';
+    width: 0px; 
+	height: 0; 
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;	
+	border-bottom: 15px solid #fff;
+    position:absolute;
+    bottom:0;
+}
+
+.app-pagination-container {
+    min-width: 70px;
+}
+
+.app-btn-today {
+  font-size: 13px; 
+  font-weight:bold;
+  font-family: "Marker Felt", "Segoe Print", Geneva, Verdana, sans-serif;  
+}
+
+
+table {
+  margin: 0 auto;
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+.note-settings-section span{
+   cursor: pointer;
+}
+.note-settings-section-1 {
+  margin-left:5px;
+} 
+.note-settings-section-2{
+  margin-left:50px;
+}
+.note-settings-section-3 {
+  margin-left:40px;
+}  
+
+/* bootstrap overrides */
+.btn {
+  font-family: "Marker Felt", "Segoe Print", Geneva, Verdana, sans-serif;
+}
+
+.btn.btn-primary {
+  background-color: #663300;
+  border-color:#663300;
+}
+
+.btn:hover {
+  border-color: #99ccff;
+}
+
+.modal-body {
+  font-family: "Marker Felt", "Segoe Print", Geneva, Verdana, sans-serif; 
+  overflow-y: auto; 
+}
+
+.modal-body form {
+  height:470px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  text-transform: none;
+  color:#663300;
+}
+
+pre {
+  background-color: transparent;
+  border: 0;
+  font-family: "Marker Felt", "Segoe Print", Geneva, Verdana, sans-serif;  
+  font-size: 14px;
+}
