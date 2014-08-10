@@ -20,11 +20,13 @@ To install the app locally, please follow these steps
 
 # Other gulp tasks
 
-- `gulp verify` 
-  runs, `jshint` , `jscs` and `jest` unit tests
+- `gulp verify`
+  runs `jshint`, `jscs` and `jest` unit tests.
 
 - `gulp watch`
   watches for changes under `src/**/*.*` and runs `gulp build` to re-generate the `dist` directory.
+
+- use `npm test` to run `jest` unit tests.
 
 # Contribute to this project
 
