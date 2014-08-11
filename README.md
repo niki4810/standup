@@ -7,9 +7,15 @@ A simple note management application for your standup meetings.
 
 All the data is stored in your browser localStorage. 
 
-# Installation guidlines
+# Installation 
 
-To install the app locally, please follow these steps
+## Via chrome web store
+
+You can install the standup app onto your chrome via the chrome web store : [Link](https://chrome.google.com/webstore/detail/standup/cfnkcgklelbpjfdaimpcjmdfhmbemhpm)
+
+## Local installation
+
+If you want to develop the app, pleaes follow these steps to install locally :
 
 - Clone the repo and `cd` into the directory.
 - Run `npm install` (this will install all the dependencies)
