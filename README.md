@@ -1,4 +1,4 @@
-Standup
+Standup [![Build Status](https://travis-ci.org/{niki4810}/{standup}.png?branch=master)](https://travis-ci.org/{niki4810}/{standup})
 =======
 
 A simple note management application for your standup meetings. 
