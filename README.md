@@ -15,7 +15,7 @@ You can install the standup app onto your chrome via the chrome web store : [Lin
 
 ## Local installation
 
-If you want to develop the app, pleaes follow these steps to install locally :
+If you want to add more features to the app and try it out locally, please follow these steps:
 
 - Clone the repo and `cd` into the directory.
 - Run `npm install` (this will install all the dependencies)
