@@ -22,7 +22,7 @@ If you want to add more features to the app and try it out locally, please follo
 - Run `npm install` (this will install all the dependencies).
 - Run `gulp bower` (to install all the third party libs).
 - Run `gulp` (or) `gulp build` (to bundle all the js files and generate a dist directory).
-- cd into `dist` directory and launch the index.html page. (alternatively you could run any local server in this directory, for example [http-server](https://www.npmjs.org/package/http-server) )
+- cd into `dist` directory and launch the index.html page. ( alternatively you could run any local server in this directory, for example [http-server](https://www.npmjs.org/package/http-server) )
 
 
 # Other gulp tasks
