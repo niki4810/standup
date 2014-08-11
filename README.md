@@ -18,9 +18,9 @@ You can install the standup app onto your chrome via the chrome web store : [Lin
 If you want to add more features to the app and try it out locally, please follow these steps:
 
 - Clone the repo and `cd` into the directory.
-- Run `npm install` (this will install all the dependencies)
-- Run `gulp bower` (to install all the third party libs)
-- Run `gulp` (or) `gulp build` (to bundle all the js files and generate a dist directory)
+- Run `npm install` (this will install all the dependencies).
+- Run `gulp bower` (to install all the third party libs).
+- Run `gulp` (or) `gulp build` (to bundle all the js files and generate a dist directory).
 - cd into `dist` directory and launch the index.html page. (alternatively you could run any local server in this directory, for example [http-server](https://www.npmjs.org/package/http-server) )
 
 
