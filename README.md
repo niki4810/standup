@@ -1,6 +1,7 @@
 Standup 
 =======
 [![Build Status](https://api.travis-ci.org/niki4810/standup.png?branch=master)](https://travis-ci.org/niki4810/standup)
+
 A simple note management application for your standup meetings. 
 
 ![Standup](https://raw.githubusercontent.com/niki4810/standup/gh-pages/app-icons/standup-app-demo.gif "Standup")
