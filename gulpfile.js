@@ -44,32 +44,32 @@ gulp.task("browserify", function(){
 	gulp.src("src/js/main.js")
 	.pipe(browserify({transform:'reactify'}))
 	.pipe(concat('main.js'))
-	.pipe(gulp.dest("dist/js"));
+	.pipe(gulp.dest("chrome-extension/dist/js"));
 });
 
 /*TODO: find a better way to copy css, assets and html :)*/
 gulp.task("copy-libs",function(){
 	gulp.src("src/libs/**/*.*")
-		.pipe(changed("dist/libs"))
-		.pipe(gulp.dest("dist/libs"));
+		.pipe(changed("chrome-extension/dist/libs"))
+		.pipe(gulp.dest("chrome-extension/dist/libs"));
 });
 
 gulp.task("copy-assets",function(){
 	gulp.src("src/assets/*.*")
-		.pipe(changed("dist/assets"))
-		.pipe(gulp.dest("dist/assets"));
+		.pipe(changed("chrome-extension/dist/assets"))
+		.pipe(gulp.dest("chrome-extension/dist/assets"));
 });
 
 gulp.task("copy-css",function(){
 	gulp.src("src/css/*.css")
-		.pipe(changed("dist/css", {extension: ".css"}))
-		.pipe(gulp.dest("dist/css"));
+		.pipe(changed("chrome-extension/dist/css", {extension: ".css"}))
+		.pipe(gulp.dest("chrome-extension/dist/css"));
 });
 
 gulp.task("copy-html",function(){
 	gulp.src("src/index.html")
-		.pipe(changed("dist", {extension: ".html"}))
-		.pipe(gulp.dest("dist"));
+		.pipe(changed("chrome-extension/dist", {extension: ".html"}))
+		.pipe(gulp.dest("chrome-extension/dist"));
 });
 
 gulp.task("default", ["build"]);
