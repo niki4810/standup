@@ -39,6 +39,7 @@ If you want to add more features to the app and try it out locally, please follo
 
 - Standup is a fun app build with ReactJS (Flux architecture), browserify and gulp. 
 - If you have a cool idea to improve it, please feel free to open a PR.
-- Before opening a PR, just make sure that you don't have any errors when your run `gulp verify` :)
+- Before opening a PR, just run `gulp verify` and make sure it passes :)
+- When you open a PR the Travis CI build will let you know if its good to merge.
 
 

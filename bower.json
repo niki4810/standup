@@ -1,6 +1,6 @@
 {
-  "name": "standup-app",
-  "version": "0.0.0",
+  "name": "standup",
+  "version": "0.0.2",
   "author": "Nikhilesh Katakam <nikhilesh.k@gmail.com> (http://niki4810.github.io/)",
   "description": "A simple note management application for your standup meetings.",
   "main": "dist/js/main.js",
