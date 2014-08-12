@@ -33893,13 +33893,11 @@ var React = require("react"),
   AppStore = require("../stores/app-store"),
   DataWatchMixin = require("../mixins/DataWatchMixin");
 
-
 var getCurrentDateAndData = function(){
   return {
     currentData: AppStore.getCurrentDateAndData()
   };
 };
-
 
 var TableComponent = React.createClass({displayName: 'TableComponent',
   mixins: [DataWatchMixin(getCurrentDateAndData)],  
@@ -34299,7 +34297,6 @@ React.renderComponent(TableComponent(null),
 	document.getElementById("app-shell"));	
 },{"./components/app-table":217,"react":215}],229:[function(require,module,exports){
 /** @jsx React.DOM */
-
 var React = require("react"),
 	AppStore = require("../stores/app-store");
 

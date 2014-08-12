@@ -21,8 +21,8 @@ If you want to add more features to the app and try it out locally, please follo
 - Clone the repo and `cd` into the directory.
 - Run `npm install` (this will install all the dependencies).
 - Run `gulp bower` (to install all the third party libs).
-- Run `gulp` (or) `gulp build` (to bundle all the js files and generate a dist directory).
-- cd into `dist` directory and launch the index.html page. ( alternatively you could run any local server in this directory, for example [http-server](https://www.npmjs.org/package/http-server) )
+- Run `gulp` (or) `gulp build` (to bundle all the js files and generate a chrome-extension/dist directory).
+- cd into `chrome-extension/dist` directory and launch the index.html page. ( alternatively you could run any local server in this directory, for example [http-server](https://www.npmjs.org/package/http-server) )
 
 
 # Other gulp tasks
@@ -31,7 +31,7 @@ If you want to add more features to the app and try it out locally, please follo
   runs `jshint`, `jscs` and `jest` unit tests.
 
 - `gulp watch`
-  watches for changes under `src/**/*.*` and runs `gulp build` to re-generate the `dist` directory.
+  watches for changes under `src/**/*.*` and runs `gulp build` to re-generate the `chrome-extension/dist` directory.
 
 - use `npm test` to run `jest` unit tests.
 
