@@ -297,13 +297,6 @@ user-select: none;
   font-family: "Marker Felt", "Segoe Print", Geneva, Verdana, sans-serif;  
 }
 
-
-table {
-  margin: 0 auto;
-  border-spacing: 10px;
-  border-collapse: separate;
-}
-
 .note-settings-section span{
    cursor: pointer;
 }

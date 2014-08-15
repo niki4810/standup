@@ -19,18 +19,14 @@ var TableComponent = React.createClass({
     var data = this.state.currentData.data;
     var dateStr = moment(date).format('dddd, MMMM Do YYYY');
     return (
-      <table cellSpacing="5px">
-        <tr>          
-          <td className="app-date-field-container">
-              <DateFieldComponent date={dateStr}/>
-          </td>          
-        </tr>
-        <tr>
-          <td className="app-note-container">
-              <NoteComponent data={data}/>
-          </td>          
-        </tr>
-      </table>
+      <div className="row">
+        <div className="col-md-12 app-date-field-container">
+          <DateFieldComponent date={dateStr}/>
+        </div>
+        <div className="col-md-12">
+          <NoteComponent data={data}/>
+        </div>
+      </div>
     );
   }
 });

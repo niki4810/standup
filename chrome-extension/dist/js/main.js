@@ -33906,16 +33906,12 @@ var TableComponent = React.createClass({displayName: 'TableComponent',
     var data = this.state.currentData.data;
     var dateStr = moment(date).format('dddd, MMMM Do YYYY');
     return (
-      React.DOM.table({cellSpacing: "5px"}, 
-        React.DOM.tr(null, 
-          React.DOM.td({className: "app-date-field-container"}, 
-              DateFieldComponent({date: dateStr})
-          )
+      React.DOM.div({className: "row"}, 
+        React.DOM.div({className: "col-md-12 app-date-field-container"}, 
+          DateFieldComponent({date: dateStr})
         ), 
-        React.DOM.tr(null, 
-          React.DOM.td({className: "app-note-container"}, 
-              NoteComponent({data: data})
-          )
+        React.DOM.div({className: "col-md-12"}, 
+          NoteComponent({data: data})
         )
       )
     );
